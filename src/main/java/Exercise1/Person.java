@@ -1,3 +1,5 @@
+package Exercise1;
+
 public class Person {
 //    String firstName, String lastName, String middleName, String country,
 //    String address, String phone, int age, String gender
