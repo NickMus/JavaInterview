@@ -56,6 +56,39 @@ public class OwnList<T> {
         }
     }
 
+    public Object get(int element) {
+        Object returnValue = null;
+        for (int i = element; i < pointer; i++) {
+            returnValue = myList[element];
+        }
+        return returnValue;
+    }
+
+    public Object previous(int element) {
+        Object returnValue = null;
+        if (element<= pointer && element != 0) {
+        for (int i = 0; i < element; i++) {
+            returnValue = myList[element - 1];
+        }
+        } else {
+            System.out.println("Hasn't previous element");
+        }
+        return returnValue;
+    }
+
+    public Object next(int element) {
+        Object returnValue = null;
+        if (element <= pointer) {
+            for (int i = element; i < pointer; i++) {
+                returnValue = myList[element + 1];
+            }
+        }else {
+            System.out.println("Hasn't next element");
+        }
+        return returnValue != null;
+    }
+
+
     @Override
     public String toString() {
         return "OwnList{" +

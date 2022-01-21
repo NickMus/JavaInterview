@@ -3,6 +3,7 @@ package lesson2;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.LinkedList;
 
 public class Main extends OwnList {
     public static void main(String[] args) {
@@ -22,6 +23,16 @@ public class Main extends OwnList {
         System.out.println(ownList);
         ownList.add(x,3);
         System.out.println(ownList);
+
+        ownList.add(x,0);
+        System.out.println(ownList);
+
+        System.out.println(ownList.get(0));
+
+        System.out.println(ownList.next(20));
+
+        System.out.println(ownList.previous(0));
+
 
 //        ownList.remove(4);
 //        System.out.println(ownList.getPointer());
